@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// src/App.tsx
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainLayout from './components/MainLayout';
+import Mission from './pages/Mission';
+import Impact from './pages/Impact';
+import Gallery from './pages/Gallery';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import Home from './components/Home';
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <MainLayout>
+            <Home />
+          </MainLayout>
+        } />
+        <Route path="/mission" element={
+          <MainLayout>
+            <Mission />
+          </MainLayout>
+        } />
+        <Route path="/impact" element={
+          <MainLayout>
+            <Impact />
+          </MainLayout>
+        } />
+        <Route path="/gallery" element={
+          <MainLayout>
+            <Gallery />
+          </MainLayout>
+        } />
+        <Route path="/about" element={
+          <MainLayout>
+            <AboutUs />
+          </MainLayout>
+        } />
+        <Route path="/contact" element={
+          <MainLayout>
+            <ContactUs />
+          </MainLayout>
+        } />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
