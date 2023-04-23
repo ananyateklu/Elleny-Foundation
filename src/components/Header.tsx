@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Grid } from '@mui/material';
 import styled from '@emotion/styled';
 import { NavLink, NavLinkProps } from 'react-router-dom';
-const logo = require("../assets/EllenyLogo.jpeg");
+const logo = require("../assets/EllenyLogo.png");
 
 interface StyledNavLinkProps extends NavLinkProps {
   activeClassName: string;
