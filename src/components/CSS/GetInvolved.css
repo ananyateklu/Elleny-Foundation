@@ -1,0 +1,29 @@
+.get-involved {
+    padding: 2rem 0;
+    margin: 0;
+    background-color: gray;
+  }
+  
+  .get-involved h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .get-involved-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .get-involved-text {
+    width: 50%;
+  }
+  
+  .get-involved-image {
+    width: 50%;
+    height: 300px;
+    background-color: #bda5a3; 
+    background-size: cover;
+    background-position: center;
+  }
+  

@@ -1,0 +1,25 @@
+.our-work {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .our-work h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .our-work p {
+    margin-bottom: 1rem;
+  }
+  
+  .learn-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #B35236;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-bottom: 2rem;
+  }
