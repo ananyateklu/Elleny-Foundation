@@ -19,7 +19,7 @@ function Home() {
               <p>
                 Your mission statement or description goes here.
               </p>
-              <a href="/" className="cta-button">Learn More</a>
+              <a href="/" className="learn-more">Learn More</a>
             </div>
           </div>
         </div>

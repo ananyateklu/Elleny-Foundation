@@ -16,14 +16,14 @@ function Footer() {
             <a href="/" className="footer-link">
               Home
             </a>
+            <a href="/impact" className="footer-link">
+              Impact
+            </a>
+            <a href="/gallery" className="footer-link">
+              Gallery
+            </a>
             <a href="/about" className="footer-link">
               About Us
-            </a>
-            <a href="/our-work" className="footer-link">
-              Our Work
-            </a>
-            <a href="/get-involved" className="footer-link">
-              Get Involved
             </a>
             <a href="/contact" className="footer-link">
               Contact Us
