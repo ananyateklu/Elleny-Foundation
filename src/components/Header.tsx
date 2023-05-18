@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './CSS/Header.css';
+import { useHeroImageContext } from './HeroImageContext';
+
 const logo = require("../assets/EllenyLogo.png");
 
 const useIsActive = () => {
@@ -13,11 +15,15 @@ const useIsActive = () => {
   return isActive;
 };
 
+
+
 const Header: React.FC = () => {
   const isActive = useIsActive();
+  const { heroVisible } = useHeroImageContext();
+
 
   return (
-    <header className="header">
+    <header className={`header ${heroVisible ? 'header--hero-visible' : ''}`}>
       <nav>
         <div className="nav-left">
           <a href="/mission" className={isActive('/mission') ? 'active' : ''}>

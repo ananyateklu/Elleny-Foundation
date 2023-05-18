@@ -2,7 +2,17 @@
     display: flex;
     justify-content: center;
     padding: 0;
-    background-color: #FFFFFF;
+
+    background:url('../../assets/headerpng.png');
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative; /* Change this to relative so it does not affect other pages */
+    z-index: 2; /* Higher than hero-image's z-index */
+    background-size: cover;
+    height: 11rem;
   }
   
   nav {
@@ -74,4 +84,7 @@
     background-color: #c4a052;
   }
 
+  .header--hero-visible {
+    position: absolute; /* Will overlay hero image */
+  }
   

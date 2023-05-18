@@ -1,12 +1,16 @@
 /* Add the following styles to Home.css */
 
-.homepage-image {
+.hero-image img {
   width: 100%;
-  height: 70vh;
-  background-image: url("../../assets/front.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  max-width: fit-content;
+}
+
+.hero-image {
+  position: absolute;
+  z-index: 1;  /* Lower than header's z-index */
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .mission {

@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { useHeroImageContext } from './HeroImageContext'; // Assuming you have this context setup
+
 import "./CSS/Home.css";
 import soccer from "../assets/soccer.jpg";
 import AboutUs from './AboutUs';
 import OurWork from './OurWork';
 import GetInvolved from './GetInvolved';
-
+const hero = require("../assets/front.jpg");
 
 function Home() {
+  const { setHeroVisible } = useHeroImageContext();
+
+  useEffect(() => {
+    setHeroVisible(true);
+
+    return () => {
+      setHeroVisible(false);
+    };
+  }, [setHeroVisible]);  // Dependency array
+
   return (
     <div>
-      <header className="homepage-image"></header>
+      <div className="hero-image">
+        <img src={hero} alt="hero"/>
+      </div>
       <section className="mission">
         <div className="container">
           <div className="mission-content">

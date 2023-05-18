@@ -7,10 +7,12 @@ import Gallery from './pages/Gallery';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Home from './components/Home';
+import { HeroImageProvider } from './components/HeroImageContext';
 
 
 const App: React.FC = () => {
   return (
+    <HeroImageProvider>
     <Router>
       <Routes>
         <Route path="/" element={
@@ -45,6 +47,7 @@ const App: React.FC = () => {
         } />
       </Routes>
     </Router>
+    </HeroImageProvider>
   );
 };
 
