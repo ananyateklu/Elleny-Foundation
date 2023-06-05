@@ -6,8 +6,8 @@ import soccer2 from '../assets/soccer2.jpg';
 const AboutUs: React.FC = () => {
   return (
     <div className="about-us">
-      <h2>ABOUT US</h2>
-      <h3>The power of kindness</h3>
+      <h3>ABOUT US</h3>
+      <h1>The power of kindness</h1>
       <p>
         The Elleny Foundation is a private foundation funded by dash and the works of dash.
       </p>

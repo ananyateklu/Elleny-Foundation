@@ -1,12 +1,17 @@
 .about-us {
     text-align: center;
-    margin: 2rem 0;
+    padding-top:1rem;
+    padding-bottom:1.5rem;
+    margin-top: 2rem;
+    background-color: #D1CECF;
   }
   
-  .about-us h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+  .about-us h1 {
+    
+      font-family: 'DM Sans', sans-serif;
+      font-weight: bolder;
+      font-size: 36px;
+    }
   
   .about-us h3 {
     font-size: 1.5rem;
@@ -39,9 +44,11 @@
     display: flex;
     justify-content: space-between;
     margin: 0 10%;
+   
   }
   
   .about-images img {
     width: 45%;
+    border-radius: 40px;
   }
   

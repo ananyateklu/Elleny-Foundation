@@ -1,17 +1,29 @@
-/* Add the following styles to Home.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
-.homepage-image {
+
+
+.hero-image img {
   width: 100%;
-  height: 70vh;
-  background-image: url("../../assets/front.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  max-width: fit-content;
+}
+
+.hero-image {
+  
+  /* Lower than header's z-index */
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hero{
+  width:100%;
 }
 
 .mission {
   display: flex;
-  padding: 2rem 0;
+  
+  margin-top: 4rem;
 }
 
 .mission-content {
@@ -24,13 +36,23 @@
 .mission-image {
   width: 50%;
   margin-right: 2rem;
+  border-radius:40px;
 }
 .mission-text {
   flex-grow: 1;
+  font-family: 'DM Sans', sans-serif;
+}
+.mission-text h2{
+  margin-bottom: 3rem;
+}
+.mission-text p{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
 }
 
 .stories {
-  padding: 2rem 0;
+  padding: 3rem 0;
   margin: 0 10%;
   text-align: center;
 }
@@ -42,10 +64,21 @@
 }
 
 .story-image {
-  width: 150px;
-  height: 150px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   background-color: #bda5a3;
 }
 
 /* Other Home styles remain the same */
+.stories-container h2{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.stories-container h1{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}

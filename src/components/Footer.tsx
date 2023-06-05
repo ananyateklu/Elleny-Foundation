@@ -43,7 +43,7 @@ function Footer() {
           </div>
         </div>
         <p className="footer-copyright">
-          &copy; {currentYear} Your Foundation Name. All rights reserved.
+          &copy; {currentYear} The Elleny Foundation. All rights reserved.
         </p>
       </div>
     </footer>
