@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Home from './components/Home';
+import GetInvolved from './components/GetInvolved';
 
 
 const App: React.FC = () => {
@@ -41,6 +42,11 @@ const App: React.FC = () => {
         <Route path="/contact" element={
           <MainLayout>
             <ContactUs />
+          </MainLayout>
+        } />
+        <Route path="/getinvolved" element={
+          <MainLayout>
+            <GetInvolved />
           </MainLayout>
         } />
       </Routes>
