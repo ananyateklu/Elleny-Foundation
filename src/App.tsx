@@ -1,57 +1,33 @@
 // src/App.tsx
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MainLayout from './components/MainLayout';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Mission from './pages/Mission';
 import Impact from './pages/Impact';
 import Gallery from './pages/Gallery';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Home from './components/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import GetInvolved from './components/GetInvolved';
-
-
-const App: React.FC = () => {
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={
-          <MainLayout>
-            <Home />
-          </MainLayout>
-        } />
-        <Route path="/mission" element={
-          <MainLayout>
-            <Mission />
-          </MainLayout>
-        } />
-        <Route path="/impact" element={
-          <MainLayout>
-            <Impact />
-          </MainLayout>
-        } />
-        <Route path="/gallery" element={
-          <MainLayout>
-            <Gallery />
-          </MainLayout>
-        } />
-        <Route path="/about" element={
-          <MainLayout>
-            <AboutUs />
-          </MainLayout>
-        } />
-        <Route path="/contact" element={
-          <MainLayout>
-            <ContactUs />
-          </MainLayout>
-        } />
-        <Route path="/getinvolved" element={
-          <MainLayout>
-            <GetInvolved />
-          </MainLayout>
-        } />
-      </Routes>
-    </Router>
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mission" element={<Mission />} />
+          <Route path="/impact" element={<Impact />} />
+          <Route path="/gallary" element={<Gallery />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element= {<ContactUs />} />
+          <Route path="/getinvolved" element= {<GetInvolved />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
-};
+}
 
 export default App;
+

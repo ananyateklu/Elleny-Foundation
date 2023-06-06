@@ -39,6 +39,7 @@ const Header: React.FC = () => {
           <a href="/about" className={isActive('/about') ? 'active' : ''}>
             About Us
           </a>
+         
           <a href="/contact" className={isActive('/contact') ? 'active' : ''}>
             Contact Us
           </a>
