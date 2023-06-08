@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=DM+Sans&display=swap');
+
+
 .get-involved {
     padding: 2rem 0;
     margin: 0;
@@ -26,4 +29,74 @@
     background-size: cover;
     background-position: center;
   }
+
+
+  /*---------------------------------------------------------------*/
   
+  .getinvolved-hero{
+    width:100%;
+    height: 90vh;
+    background-color: #D0B25E;
+  }
+
+  .rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    background-color: white; /* Replace with your desired background color */
+    
+    
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px; /* Adjust the padding as needed */
+    margin-top: 32vh;
+    margin-left: 10%;
+    color:black;
+    border-radius: 64px;
+  }
+
+  .get-name{
+    font-family: 'Cardo', serif;
+    font-size: 50px;
+    padding-left: 9%;
+    padding-top: 5%;
+  }
+
+  .get-para{
+    font-size: 20px;
+    padding-left: 10%;
+  }
+
+  .circle {
+    position: absolute;
+    top: 54%;
+    right: -2%; /* Adjust the position of the circle */
+    transform: translateY(-50%);
+    width: 700px; /* Adjust the width of the circle */
+    height: 700px; /* Adjust the height of the circle */
+    background-color: red; /* Replace with your desired background color */
+    border-radius: 50%;
+    z-index: 1;
+    background:url('../../assets/2kids.jpg');
+    background-size: cover;
+  }
+
+  .getinvolved-donate
+  {
+    position: absolute;
+width:100%;
+height: 80vh;
+background-color:white;
+z-index: 1;
+  }
+  
+  .getinvolved-volunteer
+{
+    
+width:100%;
+height: 80vh;
+background-color:#788DA5;
+
+  }

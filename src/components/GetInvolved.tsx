@@ -1,23 +1,29 @@
 import React from "react";
 import "./CSS/GetInvolved.css";
 
-function GetInvolved() {
+const GetInvolved: React.FC = () =>{
   return (
-    <section className="get-involved">
-      <div className="container">
-        <div className="get-involved-content">
-          <div className="get-involved-text">
-            <h2>GET INVOLVED</h2>
-            <p>Looking to join the action?</p>
-            <p>
-              See the variety of ways you can take action to help kids who face adversity.
-            </p>
-            <a href="/" className="learn-more">Learn More</a>
-          </div>
-          <div className="get-involved-image"></div>
-        </div>
-      </div>
-    </section>
+
+   <div className="getinvolved-container">
+    <div className="getinvolved-hero">
+Hero eko newe
+<div className="circle"></div>
+<div className="rectangle">
+  
+  <div className="get-name">Get Involved </div>
+  <div className="get-para">Looking to learn more and join the action? <br/>
+  See below for ways you can provide your <br/>
+  time and support to help kids who face <br/>
+  adversity.</div>
+</div>
+    </div>
+    <div className="getinvolved-donate">
+
+    </div>
+    <div className="getinvolved-volunteer">
+
+    </div>
+   </div>
   );
 }
 

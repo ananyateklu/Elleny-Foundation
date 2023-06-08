@@ -3,7 +3,6 @@ import "./CSS/Home.css";
 import soccer from "../assets/soccer.jpg";
 import AboutUs from './AboutUs';
 import OurWork from './OurWork';
-import GetInvolved from './GetInvolved';
 const hero = require("../assets/front.jpg");
 
 function Home() {
@@ -40,7 +39,21 @@ function Home() {
       </section>
       <AboutUs />
       <OurWork />
-      <GetInvolved />
+      <section className="get-involved">
+    <div className="container">
+      <div className="get-involved-content">
+        <div className="get-involved-text">
+          <h2>GET INVOLVED</h2>
+          <p>Looking to join the action?</p>
+          <p>
+            See the variety of ways you can take action to help kids who face adversity.
+          </p>
+          <a href="/getinvolved" className="learn-more">Learn More</a>
+        </div>
+        <div className="get-involved-image"></div>
+      </div>
+    </div>
+  </section>
     </div>
   );
 }
