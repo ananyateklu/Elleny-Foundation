@@ -21,6 +21,9 @@ export default function ImageGallery() {
 
   return (
     <div className="gallery-container">
+      <h1>
+        Gallery
+      </h1>
       <Gallery
         images={images}
         onClick={handleClick}
