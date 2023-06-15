@@ -82,3 +82,14 @@
   font-weight: bolder;
   font-size: 30px;
 }
+
+.get-involved-image {
+  width: 300px;
+  margin-right: 150px;
+  border-radius: 20px;
+}
+
+.get-involved-text {
+  width: 50%;
+  margin-left: 150px;
+}

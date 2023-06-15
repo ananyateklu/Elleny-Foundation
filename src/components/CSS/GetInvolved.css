@@ -18,20 +18,8 @@
     align-items: center;
   }
   
-  .get-involved-text {
-    width: 50%;
-    margin-left: 50px;
-  }
+
   
-  .get-involved-image {
-    width: 45%;
-    height: 300px;
-    margin-right: 50px;
-    border-radius: 20px;
-    background-color: #bda5a3; 
-    background-size: cover;
-    background-position: center;
-  }
 
 
   /*---------------------------------------------------------------*/

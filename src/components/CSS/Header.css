@@ -70,12 +70,12 @@
   
   .donate-button {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     background-color: #d0b25e;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 30px;
     transition: background-color 0.3s;
     margin-left: 1rem;
   }
