@@ -4,15 +4,16 @@ import change from "../assets/change.jpg";
 import kids from "../assets/kids.jpg";
 import AboutUs from './AboutUs';
 import OurWork from './OurWork';
-import soccer from '../assets/soccer.jpg';
+import soccer4 from '../assets/soccer4.jpg';
 import soccer2 from '../assets/soccer2.jpg';
+import stories from '../assets/stories.jpg';
 const hero = require("../assets/front.jpg");
 
 function Home() {
   return (
     <div>
       <div className="hero-image">
-        <img src={hero} className="hero" alt="hero"/>
+        <img src={hero} className="hero" alt="hero" />
       </div>
       <section className="mission">
         <div className="mission-container">
@@ -21,7 +22,7 @@ function Home() {
             <div className="mission-text">
               <h2>Mission</h2>
               <p>
-              Improve the health of those we serve with care and compassion to realize higher community standards
+                The Elleny Foundation was established to honor the memory of Elleny Belayneh, whose aspiration was to become a pediatrician. Possessing a deep love for children and an inherent desire to help others, Elleny's spirit is the guiding force of our mission. The Foundation is steadfastly committed to erecting one or more clinics in her name, dedicated to serving the underserved, with a particular focus on children's welfare.
               </p>
               <a href="/mission" className="learn-more">Learn More</a>
             </div>
@@ -34,29 +35,29 @@ function Home() {
           <h1>Real people experiencing real impact</h1>
           <p>Read more about the organizations and people working to support positive growth and development for children every day.</p>
           <div className="story-images">
-            <img className="story-image" src={soccer} alt="soccer"></img>
+            <img className="story-image" src={soccer4} alt="soccer"></img>
             <img className="story-image" src={soccer2} alt="soccer"></img>
-            <div className="story-image"></div>
+            <img className="story-image" src={stories} alt="stories"></img>
           </div>
         </div>
       </section>
       <AboutUs />
       <OurWork />
       <section className="get-involved">
-    <div className="container">
-      <div className="get-involved-content">
-        <div className="get-involved-text">
-          <h2>GET INVOLVED</h2>
-          <p>Looking to join the action?</p>
-          <p>
-            See the variety of ways you can take action to help kids who face adversity.
-          </p>
-          <a href="/getinvolved" className="learn-more">Learn More</a>
+        <div className="container">
+          <div className="get-involved-content">
+            <div className="get-involved-text">
+              <h2>GET INVOLVED</h2>
+              <p>Looking to join the action?</p>
+              <p>
+                See the variety of ways you can take action to help kids who face adversity.
+              </p>
+              <a href="/getinvolved" className="learn-more">Learn More</a>
+            </div>
+            <img className="get-involved-image" src={kids} alt="Get Involved" />
+          </div>
         </div>
-       <img className="get-involved-image" src={kids} alt="Get Involved" />
-      </div>
-    </div>
-  </section>
+      </section>
     </div>
   );
 }

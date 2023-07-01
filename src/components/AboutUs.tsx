@@ -1,7 +1,7 @@
 import React from 'react';
 import './CSS/AboutUs.css';
-import soccer from '../assets/soccer.jpg';
-import soccer2 from '../assets/soccer2.jpg';
+import kind from '../assets/kind.jpg';
+import kind2 from '../assets/kind2.jpg';
 
 const AboutUs: React.FC = () => {
   return (
@@ -13,8 +13,8 @@ const AboutUs: React.FC = () => {
       </p>
       <a href="/about" className="learn-more">Learn More</a>
       <div className="about-images">
-        <img src={soccer} alt="About1" />
-        <img src={soccer2} alt="About2" />
+        <img src={kind} alt="About1" />
+        <img src={kind2} alt="About2" />
       </div>
     </div>
   );
