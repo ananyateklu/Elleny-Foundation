@@ -6,7 +6,7 @@ const GetInvolved: React.FC = () =>{
 
    <div className="getinvolved-container">
     <div className="getinvolved-hero">
-Hero eko newe
+
 <div className="circle"></div>
 <div className="rectangle">
   
