@@ -9,11 +9,14 @@ import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import GetInvolved from './components/GetInvolved';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
+        <ParallaxProvider>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mission" element={<Mission />} />
@@ -23,6 +26,7 @@ function App() {
           <Route path="/contact" element= {<ContactUs />} />
           <Route path="/getinvolved" element= {<GetInvolved />} />
         </Routes>
+        </ParallaxProvider>
         <Footer />
       </BrowserRouter>
     </div>
