@@ -28,6 +28,15 @@ export default function ImageGallery() {
         images={images}
         onClick={handleClick}
         enableImageSelection={false}
+        tagStyle={{
+          color: 'white',
+          backgroundColor: 'black', 
+          fontSize: '0.7em', 
+          fontWeight: 'bold', 
+          padding: '0.1em 0.3em 0.3em 0.3em', 
+          borderRadius: '3px', 
+          margin: '0.1em 0.3em 0.3em 0em' 
+        }}
       />
       {!!currentImage && (
         /* @ts-ignore */

@@ -10,7 +10,7 @@ function OurWork() {
         <p>
           We are committed to giving 100% to good causes, as well as driving resources to help people who face adversity.
         </p>
-        <a href="/" className="learn-more">Learn More</a>
+        <a href="/impact" className="learn-more">Learn More</a>
       </div>
     </section>
   );
