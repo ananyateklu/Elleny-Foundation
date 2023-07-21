@@ -1,7 +1,7 @@
 .impact-hero{
     height:100vh;
     width:100%;
-    background-color:rgb(3, 25, 44);
+    background-color: #d0b25e;
     border-radius: 1px 1px 32px 380px;
 }
 
@@ -38,7 +38,7 @@
     box-sizing: border-box;
     width: 49%;
     height: 400px;
-    background-color: aquamarine;
+    background-color: #749e6e;
     border-radius: 10px 100px / 120px 100px;
     margin-top: 3rem;
     padding-top: 3%;
