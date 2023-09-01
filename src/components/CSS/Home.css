@@ -43,12 +43,12 @@
   font-family: 'DM Sans', sans-serif;
 }
 .mission-text h2{
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .mission-text p{
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .stories {
@@ -60,7 +60,7 @@
 .story-images {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .story-image {
@@ -81,4 +81,15 @@
   font-family: 'DM Sans', sans-serif;
   font-weight: bolder;
   font-size: 30px;
+}
+
+.get-involved-image {
+  width: 300px;
+  margin-right: 150px;
+  border-radius: 20px;
+}
+
+.get-involved-text {
+  width: 50%;
+  margin-left: 150px;
 }

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=DM+Sans&display=swap');
+
+
+.gallery-container{
+    margin-top:20vh;
+}
+
+.gallery-container h1{
+    font-family:'Cardo', Courier, monospace;
+    padding-left:2rem;
+    border-bottom: solid black 5px;
+    width:10%;
+}

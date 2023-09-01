@@ -15,14 +15,12 @@
 
 .contact-sub{
     height: 84vh;
-    background-color: #ecfff4;
     display: grid;
     grid-template-columns: 50% 50%;
     
 }
 
 .address-rectangle{
-    background-color: #260859;
     height:85%;
     width: 70%;
     margin-left: 10%;
@@ -43,12 +41,13 @@
 }
 
 .contact-map{
-    height: 60vh;
+    height: 68vh;
     width: 80%;
     background-color: grey;
     margin-left: 10%;
     margin-top: 3%;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .contact-container {
@@ -144,14 +143,14 @@
     padding: 10px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #260859; /* dark purple color */
+    border-bottom: 1px solid #c4a052; /* dark purple color */
     outline: none;
     transition: border-bottom 0.3s;
   }
   
   .contact-form input:focus,
   .contact-form textarea:focus {
-    border-bottom: 2px solid #260859; /* dark purple color */
+    border-bottom: 2px solid #c4a052; /* dark purple color */
   }
 
   .contact-form .name-inputs {
@@ -171,7 +170,7 @@
   }
   
   .contact-form button {
-    background-color:#260859; /* dark purple color */
+    background-color:#c4a052; /* dark purple color */
     color: white;
     width: 200px;
     height: 50px;
@@ -179,10 +178,14 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 40px;
   }
   
   .contact-form button:hover {
-    background-color: #260859;
+    background-color: white;
+    border: #c4a052 solid 2px;
+    color: #c4a052;
+    
   }
 
   

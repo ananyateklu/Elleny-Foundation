@@ -1,102 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo&family=DM+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=DM+Sans&display=swap");
 
 .get-involved {
-    padding: 2rem 0;
-    margin: 0;
-    background-color:#D9D9D9;
-  }
-  
-  .get-involved h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .get-involved-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .get-involved-text {
-    width: 50%;
-  }
-  
-  .get-involved-image {
-    width: 50%;
-    height: 300px;
-    background-color: #bda5a3; 
-    background-size: cover;
-    background-position: center;
-  }
+  padding: 2rem 0;
+  margin: 0;
+  background-color: #d9d9d9;
+}
 
+.get-involved h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  /*---------------------------------------------------------------*/
-  
-  .getinvolved-hero{
-    width:100%;
-    height: 90vh;
-    background-color: #D0B25E;
-  }
+.get-involved-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .rectangle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
-    background-color: white; /* Replace with your desired background color */
-    
-    
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px; /* Adjust the padding as needed */
-    margin-top: 32vh;
-    margin-left: 10%;
-    color:black;
-    border-radius: 64px;
-  }
+/*---------------------------------------------------------------*/
 
-  .get-name{
-    font-family: 'Cardo', serif;
-    font-size: 50px;
-    padding-left: 9%;
-    padding-top: 5%;
-  }
+.getinvolved-hero {
+  width: 100%;
+  height: 120vh;
+  background-color: #d0b25e;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 
-  .get-para{
-    font-size: 20px;
-    padding-left: 10%;
-  }
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-color: white; /* Replace with your desired background color */
 
-  .circle {
-    position: absolute;
-    top: 54%;
-    right: -2%; /* Adjust the position of the circle */
-    transform: translateY(-50%);
-    width: 700px; /* Adjust the width of the circle */
-    height: 700px; /* Adjust the height of the circle */
-    background-color: red; /* Replace with your desired background color */
-    border-radius: 50%;
-    z-index: 1;
-    background:url('../../assets/2kids.jpg');
-    background-size: cover;
-  }
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px; /* Adjust the padding as needed */
+  margin-top: 32vh;
+  margin-left: 10%;
+  color: black;
+  border-radius: 64px;
+}
 
-  .getinvolved-donate
-  {
-    position: absolute;
-width:100%;
-height: 80vh;
-background-color:white;
-z-index: 1;
-  }
-  
-  .getinvolved-volunteer
-{
-    
-width:100%;
-height: 80vh;
-background-color:#788DA5;
+.get-name {
+  font-family: "Cardo", serif;
+  font-size: 50px;
+  padding-left: 9%;
+  padding-top: 5%;
+}
 
-  }
+.get-para {
+  font-size: 20px;
+  padding-left: 10%;
+}
+
+.circle {
+  position: relative;
+  top: 54%;
+  right: -56%; /* Adjust the position of the circle */
+  transform: translateY(-50%);
+  width: 700px; /* Adjust the width of the circle */
+  height: 700px; /* Adjust the height of the circle */
+  background-color: red; /* Replace with your desired background color */
+  border-radius: 50%;
+  z-index: 1;
+  background: url("../../assets/2kids.jpg");
+  background-size: cover;
+}
+
+.getinvolved-donate {
+  position: absolute;
+  width: 100%;
+  height: 0vh;
+  background-color: white;
+  z-index: 1;
+}
+
+.getinvolved-volunteer {
+  width: 100%;
+  height: 0vh;
+  background-color: #788da5;
+}

@@ -1,0 +1,76 @@
+.mission-hero{
+    height:100vh;
+    width:100%;
+    background-image: url("../../assets/our-mission2.png");
+    background-size:cover;
+}
+
+.mission-head{
+    padding-top: 10%;
+    margin-left: 8%;
+    text-align: left;
+}
+
+.mission-head h1{
+    margin-bottom: 24px;
+    max-width: 100%;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 1.17;
+    max-width: 264px;
+}
+
+.mission-tag{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.67;
+    width: 30%;
+}
+
+.content-section{
+    width: 100%;
+    max-width: 640px;
+    display:flex;
+    flex-direction: column;
+    padding-left:30%;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+.section1-head{
+    
+    font-size: 36px;
+    line-height: 1.17;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(29, 37, 44);
+    text-transform: uppercase;
+    
+    text-align: center;
+}
+.section1-head h3{
+    font-size: 48px;
+    line-height: 1.08;
+}
+
+.section1-body{
+    transform: translateY(0px);
+    opacity: 1;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.67;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: rgb(29, 37, 44);
+}

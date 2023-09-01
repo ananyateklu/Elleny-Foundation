@@ -37,7 +37,8 @@
     text-decoration: none;
     color: inherit;
     margin-left: 3.5rem;
-    margin-right: 3.5em;
+    margin-right: 4em;
+    margin-top: -20px;
     position: relative;
     transition: color 0.3s;
   }
@@ -54,7 +55,7 @@
   nav a.active::after {
     content: '';
     position: absolute;
-    bottom: -4px;
+    bottom: -8px;
     left: 0;
     right: 0;
     height: 2px;
@@ -68,12 +69,12 @@
   
   .donate-button {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     background-color: #d0b25e;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 30px;
     transition: background-color 0.3s;
     margin-left: 1rem;
   }

@@ -1,0 +1,77 @@
+.impact-hero{
+    height:100vh;
+    width:100%;
+    background-color: #d0b25e;
+    border-radius: 1px 1px 32px 380px;
+}
+
+.impact-head{
+    padding-top: 16%;
+    margin-left: 8%;
+    text-align: left;
+}
+
+.impact-head h1{
+    margin-bottom: 24px;
+    max-width: 100%;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 1.17;
+    max-width: 264px;
+}
+
+.impact-tag{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.67;
+    width: 30%;
+}
+
+.impact-body{
+    box-sizing: border-box;
+    width: 49%;
+    height: 400px;
+    background-color: #749e6e;
+    border-radius: 10px 100px / 120px 100px;
+    margin-top: 3rem;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+   
+}
+
+.impact-rcont{
+text-align: right;
+}
+
+
+.impact-right{
+    display:inline-block;
+    
+}
+
+.impact-circle{
+    background-color: bisque;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+}
+
+.impact-body p{
+margin-top:3%;
+}
+
+.imrigrid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
