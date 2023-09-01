@@ -43,7 +43,7 @@ const Header: React.FC = () => {
           <a href="/contact" className={isActive('/contact') ? 'active' : ''}>
             Contact Us
           </a>
-          <a href="https://www.paypal.com/donate/?hosted_button_id=HJ7XZ7MAKCVS8" className="donate-button">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=AY8U45QM5K5GJ" className="donate-button">
             Donate
           </a>
         </div>
