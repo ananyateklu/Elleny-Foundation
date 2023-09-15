@@ -7,13 +7,18 @@ import OurWork from './OurWork';
 import soccer4 from '../assets/soccer4.jpg';
 import soccer2 from '../assets/soccer2.jpg';
 import stories from '../assets/stories.jpg';
-const hero = require("../assets/front.jpg");
+import video from '../assets/Video.mp4';
+
 
 function Home() {
+
   return (
     <div>
       <div className="hero-image">
-        <img src={hero} className="hero" alt="hero" />
+        <video className="hero" controls autoPlay muted loop>
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <section className="mission">
         <div className="mission-container">

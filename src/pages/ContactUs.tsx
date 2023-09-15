@@ -99,12 +99,6 @@ const ContactUs: React.FC = () => {
             </form>
           </div>
         </div>
-        <div className='contact-address'>
-          <div className='contact-map'>
-            Map Section
-          </div>
-
-        </div>
       </div>
 
     </div>
