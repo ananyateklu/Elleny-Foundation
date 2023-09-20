@@ -4,7 +4,6 @@ import family2 from "../assets/family2.jpg";
 import family3 from "../assets/family3.jpg";
 import family4 from "../assets/family4.jpg";
 import family5 from "../assets/family5.jpg";
-import family6 from "../assets/family6.jpg";
 import family7 from "../assets/family7.jpg";
 import family8 from "../assets/family8.jpg";
 import family9 from "../assets/family9.jpg";
@@ -13,7 +12,6 @@ import family11 from "../assets/family11.jpg";
 import family12 from "../assets/family12.jpg";
 import family13 from "../assets/family13.jpg";
 import family14 from "../assets/family14.jpg";
-import family15 from "../assets/family15.jpg";
 import oldlogo from "../assets/oldlogo.jpg";
 import fund from "../assets/fund.png";
 import soccer from "../assets/soccer.jpg";
@@ -85,16 +83,6 @@ export const images: CustomImage[] = [
     caption: "Elleny and her family",
   },
   {
-    src: family6,
-    original: family6,
-    width: 320,
-    height: 212,
-    tags: [
-      { value: "Family", title: "Family" },
-    ],
-    caption: "Elleny and her family",
-  },
-  {
     src: family7,
     original: family7,
     width: 320,
@@ -161,16 +149,6 @@ export const images: CustomImage[] = [
     width: 200,
     height: 212,
     caption: "Elleny",
-  },
-  {
-    src: family15,
-    original: family15,
-    width: 320,
-    height: 212,
-    tags: [
-      { value: "Family", title: "Family" },
-    ],
-    caption: "Elleny and her family",
   },
   {
     src: fund,
