@@ -93,3 +93,57 @@
   width: 50%;
   margin-left: 150px;
 }
+
+@media (max-width: 767px) {
+
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    margin-top: 4rem;
+  }
+
+  
+
+  .mission-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 10%;
+    max-width: 80%; 
+  }
+
+  .mission-image {
+    width: 100%;
+    margin:0px;
+    border-radius:40px;
+  }
+
+  .mission-text {
+    text-align: center;
+  }
+
+  .story-images {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .get-involved-text {
+   
+    margin:0px;
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+}
+  
+
+  .get-involved-image {
+    width: 300px;
+    margin:0px;
+    border-radius: 20px;
+}
+
+
+}

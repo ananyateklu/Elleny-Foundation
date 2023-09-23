@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useLocation } from 'react-router-dom';
 import './CSS/Header.css';
+import Hamburger from './Hamburger'
 const logo = require("../assets/EllenyLogo.png");
 
 const useIsActive = () => {
@@ -16,8 +17,13 @@ const useIsActive = () => {
 const Header: React.FC = () => {
   const isActive = useIsActive();
 
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen)
+  }
   return (
-    <header className="header">
+    <header className={`header ${hamburgerOpen ? 'hamburger-open' : ''}`}>
       <nav>
         <div className="nav-left">
           <a href="/mission" className={isActive('/mission') ? 'active' : ''}>
@@ -48,6 +54,47 @@ const Header: React.FC = () => {
           </a>
         </div>
       </nav>
+      <div className="hamburger_cont" onClick={toggleHamburger}>
+          <Hamburger isOpen={hamburgerOpen}/>
+          <a href="/">
+            <img src={logo} alt="logo" className="logo" />
+          </a>
+        </div>
+      <div className="nav-mob" style={{display: hamburgerOpen ? 'inline' : 'none'}}>
+        <ul className={hamburgerOpen ? 'open' : ''}>
+            <li><a href="/" className={isActive('/') ? 'active' : ''}>
+            Home
+          </a></li>
+            <li>
+          <a href="/mission" className={isActive('/mission') ? 'active' : ''}>
+            Mission
+          </a></li>
+            <li>
+              <a href="/impact" className={isActive('/impact') ? 'active' : ''}>
+            Impact
+          </a></li>
+          <li>
+            <a href="/gallery" className={isActive('/gallery') ? 'active' : ''}>
+            Gallery
+          </a></li>
+          <li>
+          <a href="/about" className={isActive('/about') ? 'active' : ''}>
+            About Us
+          </a>
+          </li>
+          <li>
+          <a href="/contact" className={isActive('/contact') ? 'active' : ''}>
+            Contact Us
+          </a>
+          </li>
+          <li>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=AY8U45QM5K5GJ" className="donate-button">
+            Donate
+          </a>
+          </li>
+            
+        </ul>
+        </div>
     </header>
   );
 };

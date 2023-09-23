@@ -11,3 +11,9 @@
     border-bottom: solid black 5px;
     width:10%;
 }
+
+@media (max-width: 767px){
+    .gallery-container {
+        margin: 0px;
+    }
+}

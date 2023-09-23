@@ -84,3 +84,17 @@
   height: 0vh;
   background-color: #788da5;
 }
+
+
+@media (max-width:767px)
+{
+
+  .get-involved-content {
+    display: block;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+}
