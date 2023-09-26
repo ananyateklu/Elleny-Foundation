@@ -91,6 +91,7 @@
 
 .nav-mob{
     display:none;
+    transition: left 0.3s ease; 
   
 }
 
@@ -118,14 +119,12 @@
       list-style-type: none;
     padding-right: 10px;
     margin:0px;
-    transition: all 0.3s linear;
+    transition: left 0.3s ease; 
     text-align: center;
     padding-left:0px;
     
   }
-  .nav-mob ul.open {
-    height: 100vh; /* Adjust the height as needed */
-  }
+  
   .nav-left {
     display:none;
   }
