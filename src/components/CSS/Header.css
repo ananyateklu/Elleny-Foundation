@@ -104,15 +104,16 @@
       grid-template-columns: 10% 72%;
       gap: 5%;
       padding-top: 10px;
-      margin-left: 10px;
-      z-index:10;
-      position: relative;
+      padding-left: 10px;
+      
+      position: fixed;
       align-items: center;
+      background-color: #dac3c39f;
   }
 
   .nav-mob ul{
       display:inline;
-      background-color: rgb(234, 228, 228);
+      background-color: #404040;
       height:100vh;
       width:50vw;
       position:absolute;
@@ -122,7 +123,9 @@
     transition: left 0.3s ease; 
     text-align: center;
     padding-left:0px;
-    
+    padding-top: 2rem;
+    position: fixed;
+    margin-top: 4.5rem;
   }
   
   .nav-left {
@@ -163,6 +166,7 @@
     height: 0; /* Initially hide the navigation drawer */
   overflow: hidden;
   transition: height 0.3s ease; 
+
 }
 
 .nav-mob ul li{
@@ -172,7 +176,7 @@
 
 .nav-mob a {
   text-decoration: none;
-  color: inherit;
+  color: white;
   
   
   position: relative;
@@ -183,7 +187,7 @@
   color: #5c6bc0;
 }
 
-.nav-moba.active {
+.nav-mob a.active {
   font-weight: bold;
   color: inherit;
 }

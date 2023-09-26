@@ -175,3 +175,21 @@
   border: #c4a052 solid 2px;
   color: #c4a052;
 }
+
+@media (max-width:767px){
+  .contact-sub {
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding:2rem;
+}
+
+.contact-form input{
+  width: 300px;
+}
+
+.contact-form textarea{
+  width: 300px;
+}
+}

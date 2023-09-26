@@ -155,5 +155,18 @@
    
   }
 
+  .about-tag{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.67;
+    width: auto;
+}
+
+.about-hero{
+  height:50vh;
+  background-size:auto auto;
+  object-fit: cover;
+  padding-bottom:1rem;
+}
 
 }

@@ -145,5 +145,13 @@
     border-radius: 20px;
 }
 
+.hero-image {
+  
+  /* Lower than header's z-index */
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 }

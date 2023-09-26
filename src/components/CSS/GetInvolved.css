@@ -97,4 +97,38 @@
     
   }
 
+  .circle{
+    display:none;
+  }
+
+  .getinvolved-hero {
+    width: 100%;
+    height: 70vh;
+    background-color: #d0b25e;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .rectangle {
+    position:relative;
+   
+    width: 70%; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    background-color: white; /* Replace with your desired background color */
+  
+    align-items: center;
+    justify-content: flex-start;
+    padding: none; /* Adjust the padding as needed */
+    margin-top: 10rem;
+    margin-left: none;
+    margin-right: none;
+    
+  }
+
+  .get-para {
+    font-size:medium;
+    padding-right: 10%;
+    
+  }
 }
