@@ -1,199 +1,59 @@
 .header {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    
-    background:url('../../assets/headerpngtrs.png');
-    background-size: cover;
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: absolute; /* Change this to relative so it does not affect other pages */
-    z-index: 2;
-    height: 9rem;
-    
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    width: 100%;
-  }
-  
-  .nav-left,
-  .nav-center,
-  .nav-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-left,
-  .nav-right {
-    justify-content: space-around;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: inherit;
-    margin-left: 3.5rem;
-    margin-right: 4em;
-    margin-top: -20px;
-    position: relative;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #5c6bc0;
-  }
-  
-  nav a.active {
-    font-weight: bold;
-    color: inherit;
-  }
-  
-  nav a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: currentColor;
-  }
-  
-  .logo {
-    width: 10rem;
-    height: auto;
-  }
-  
-  .donate-button {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background-image: none;
-    background-color: #d0b25e;
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s;
-    margin-left: 1rem;
-  }
-  
-  .donate-button:hover {
-    background-color: #c4a052;
-  }
+  display: flex;
+  justify-content: center;
+  padding: 0;
 
-  .hamburger_cont{
-    display: none;
+  background: url("../../assets/headerpngtrs.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute; /* Change this to relative so it does not affect other pages */
+  z-index: 2;
+  height: 9rem;
 }
 
-.nav-mob{
-    display:none;
-    transition: left 0.3s ease; 
-  
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
 }
 
-
-
-
-  @media (max-width: 767px) {
-    .hamburger_cont{
-      display:grid;
-      grid-template-columns: 10% 72%;
-      gap: 5%;
-      padding-top: 10px;
-      padding-left: 10px;
-      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.507);
-      position: fixed;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.579);
-  }
-
-  .nav-mob ul{
-      display:inline;
-      background-color: rgba(255, 255, 255, 0.914);
-      height:100vh;
-      width:50vw;
-      position:absolute;
-      list-style-type: none;
-    padding-right: 10px;
-    margin:0px;
-    transition: left 0.3s ease; 
-    text-align: center;
-    padding-left:0px;
-    padding-top: 2rem;
-    position: fixed;
-    margin-top: 4.5rem;
-  }
-  
-  .nav-left {
-    display:none;
-  }
-
-  .nav-right{
-    display:none;
-  }
-
-  .nav-center{
-    display:none;
-  }
-
-  .header {
-    display:block;
-    background-image: none;
-    background-color: white;
-    width: 100%;
-   height: auto;
-   
-   position: relative;
-  }
-
-  .donate-button{
-    margin:0px;
-  }
-
-  .logo {
-    width: 30%;
-    height: auto;
-  }
-
-  
-
-  .nav-mob{
-    
-    height: 0; /* Initially hide the navigation drawer */
-  overflow: hidden;
-  transition: height 0.3s ease; 
-
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
 }
 
-.nav-mob ul li{
-  margin-bottom: 1rem;
+.nav-left,
+.nav-right {
+  justify-content: space-around;
 }
 
-
-.nav-mob a {
+nav a {
   text-decoration: none;
-  color: black;
-  
-  
+  color: inherit;
+  margin-left: 3.5rem;
+  margin-right: 4em;
+  margin-top: -20px;
   position: relative;
   transition: color 0.3s;
 }
 
-.nav-mob a:hover {
+nav a:hover {
   color: #5c6bc0;
 }
 
-.nav-mob a.active {
+nav a.active {
   font-weight: bold;
   color: inherit;
 }
 
-.nav-mob a.active::after {
-  content: '';
+nav a.active::after {
+  content: "";
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -202,7 +62,135 @@
   background-color: currentColor;
 }
 
-.hamburger_cont a{
-  text-align: center;
+.logo {
+  width: 10rem;
+  height: auto;
 }
+
+.donate-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-image: none;
+  background-color: #d0b25e;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  margin-left: 1rem;
+}
+
+.donate-button:hover {
+  background-color: #c4a052;
+}
+
+.hamburger_cont {
+  display: none;
+}
+
+.nav-mob {
+  display: none;
+  transition: left 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .hamburger_cont {
+    display: grid;
+    grid-template-columns: 10% 72%;
+    gap: 5%;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.507);
+    position: fixed;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.579);
   }
+
+  .nav-mob ul {
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.914);
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    list-style-type: none;
+    padding-right: 10px;
+    margin: 0px;
+    transition: left 0.3s ease;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 2rem;
+    position: fixed;
+    margin-top: 4.5rem;
+  }
+
+  .nav-left {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .header {
+    display: block;
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+
+  .donate-button {
+    margin: 0px;
+  }
+
+  .logo {
+    width: 30%;
+    height: auto;
+  }
+
+  .nav-mob {
+    height: 0; /* Initially hide the navigation drawer */
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .nav-mob ul li {
+    margin-bottom: 1rem;
+  }
+
+  .nav-mob a {
+    text-decoration: none;
+    color: black;
+
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  .nav-mob a:hover {
+    color: #5c6bc0;
+  }
+
+  .nav-mob a.active {
+    font-weight: bold;
+    color: inherit;
+  }
+
+  .nav-mob a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: currentColor;
+  }
+
+  .hamburger_cont a {
+    text-align: center;
+  }
+}
