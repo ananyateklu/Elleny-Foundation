@@ -78,6 +78,7 @@
 @media (max-width: 767px)
 {
     .mission-hero{
+        margin-top: 73px;
         height:auto;
         width:100%;
         background-image: url("../../assets/our-mission2.png");
