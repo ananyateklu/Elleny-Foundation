@@ -31,13 +31,13 @@ function Footer() {
           </nav>
           
           <div className="social-links">
-          <a href="/donate" className="donate-footer">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=AY8U45QM5K5GJ" className="donate-footer">
             Donate
           </a>
-            <a href="/" className="social-link">
+            <a href="https://www.facebook.com/EllenyFound" className="social-link">
               <img src={Facebook} alt='Facebook' className="facebook-link"/>
             </a>
-            <a href="/" className="social-link">
+            <a href="https://www.instagram.com/ellenyfoundation/" className="social-link">
             <img src={Instagram} alt='Instagram' className="instagram-link" />
             </a>
           </div>

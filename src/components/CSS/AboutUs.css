@@ -3,7 +3,6 @@
     padding-top:1rem;
     padding-bottom:1.5rem;
     margin-top: 2rem;
-    padding-bottom: 5rem;
     background-color: #D1CECF;
   }
   
@@ -129,4 +128,46 @@
     font-stretch: normal;
     letter-spacing: normal;
     color: rgb(29, 37, 44);
+}
+
+@media (max-width: 767px){
+
+  .about-us {
+    text-align: center;
+    padding: 1rem 1rem 1rem 1.5rem;
+    
+    margin-top: 2rem;
+    
+    
+  }
+  
+
+  .about-images {
+    display: grid;
+    gap:2rem;
+    justify-content: center;
+    margin: 0 10%;
+   
+  }
+
+  .about-images img {
+    width: 100%;
+   
+  }
+
+  .about-tag{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.67;
+    width: auto;
+}
+
+.about-hero{
+  margin-top: 76px;
+  height:50vh;
+  background-size:auto auto;
+  object-fit: cover;
+  padding-bottom:1rem;
+}
+
 }

@@ -75,3 +75,13 @@ margin-top:3%;
     display:grid;
     grid-template-columns: 50% 50%;
 }
+
+
+@media (max-width: 767px){
+    .impact-tag{
+        width:auto;
+    }
+    .impact-hero {
+        margin-top: 76px;
+    }
+}

@@ -74,3 +74,40 @@
     letter-spacing: normal;
     color: rgb(29, 37, 44);
 }
+
+@media (max-width: 767px)
+{
+    .mission-hero{
+        margin-top: 76px;
+        height:auto;
+        width:100%;
+        background-image: url("../../assets/our-mission2.png");
+        background-size:auto auto;
+        object-fit: cover;
+        padding-bottom:1rem;
+    }
+
+    .mission-tag{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        line-height: 1.67;
+        width: auto;
+    }
+
+    .content-section
+    {
+        padding:0px !important;
+    }
+
+    
+    .section1-body
+    {
+    
+        padding-left: 1rem;
+        padding-right: 1rem;
+    
+    }
+
+
+
+}

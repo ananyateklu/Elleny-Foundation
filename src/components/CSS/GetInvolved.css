@@ -84,3 +84,51 @@
   height: 0vh;
   background-color: #788da5;
 }
+
+
+@media (max-width:767px)
+{
+
+  .get-involved-content {
+    display: block;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  .circle{
+    display:none;
+  }
+
+  .getinvolved-hero {
+    width: 100%;
+    height: 90vh;
+    background-color: #d0b25e;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .rectangle {
+    position:relative;
+   
+    width: 70%; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    background-color: white; /* Replace with your desired background color */
+  
+    align-items: center;
+    justify-content: flex-start;
+    padding: none; /* Adjust the padding as needed */
+    margin-top: 10rem;
+    margin-left: none;
+    margin-right: none;
+    
+  }
+
+  .get-para {
+    font-size:medium;
+    padding-right: 10%;
+    
+  }
+}
