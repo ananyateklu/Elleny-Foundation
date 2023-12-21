@@ -1,16 +1,16 @@
 import React from "react";
 import "./CSS/OurWork.css";
+import { useTranslation } from 'react-i18next';
 
 function OurWork() {
+  const { t } = useTranslation();
   return (
     <section className="our-work">
       <div className="container">
-        <h2>OUR WORK</h2>
-        <p>Seeking to co-create positive change</p>
-        <p>
-          We are committed to giving 100% to good causes, as well as driving resources to help people who face adversity.
-        </p>
-        <a href="/impact" className="learn-more">Learn More</a>
+        <h2>{t("OurWork")}</h2>
+        <p>{t("WorkParagraph")}</p>
+        <p>{t("WorkParagraph2")}</p>
+        <a href="/impact" className="learn-more">{t("LearnMore")}</a>
       </div>
     </section>
   );

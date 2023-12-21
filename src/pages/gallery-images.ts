@@ -167,7 +167,7 @@ export const images: CustomImage[] = [
     width: 270,
     height: 212,
     tags: [
-      { value: "Old Logo", title: "Old logo" },
+      { value: "OldLogo", title: "Old logo" },
     ],
     caption: "Old Logo",
   },
@@ -288,7 +288,7 @@ export const images: CustomImage[] = [
     height: 212,
     tags: [
       { value: "Run", title: "Run" },
-      { value: "Fundrasing", title: "Fundrasing" },
+      { value: "Fundraising", title: "Fundrasing" },
     ],  
     caption: "Fundraising 5K Run",
     
@@ -300,7 +300,7 @@ export const images: CustomImage[] = [
     height: 212,
     tags: [
       { value: "Run", title: "Run" },
-      { value: "Fundrasing", title: "Fundrasing" },
+      { value: "Fundraising", title: "Fundrasing" },
     ],
     caption: "Fundraising 5K Run",
   },
@@ -311,7 +311,7 @@ export const images: CustomImage[] = [
     height: 212,
     tags: [
       { value: "Run", title: "Run" },
-      { value: "Fundrasing", title: "Fundrasing" },
+      { value: "Fundraising", title: "Fundrasing" },
     ],
     caption: "Fundraising 5K Run",
   },
@@ -322,7 +322,7 @@ export const images: CustomImage[] = [
     height: 212,
     tags: [
       { value: "Run", title: "Run" },
-      { value: "Fundrasing", title: "Fundrasing" },
+      { value: "Fundraising", title: "Fundrasing" },
     ],
     caption: "Fundraising 5K Run",
   },
@@ -333,7 +333,7 @@ export const images: CustomImage[] = [
     height: 212,
     tags: [
       { value: "Run", title: "Run" },
-      { value: "Fundrasing", title: "Fundrasing" },
+      { value: "Fundraising", title: "Fundrasing" },
     ],
     caption: "Fundraising 5K Run",
   },
@@ -344,7 +344,7 @@ export const images: CustomImage[] = [
     height: 212,
     tags: [
       { value: "Run", title: "Run" },
-      { value: "Fundrasing", title: "Fundrasing" },
+      { value: "Fundraising", title: "Fundrasing" },
     ],
     caption: "Fundraising 5K Run",
   },
@@ -355,7 +355,7 @@ export const images: CustomImage[] = [
     height: 212,
     tags: [
       { value: "Run", title: "Run" },
-      { value: "Fundrasing", title: "Fundrasing" },
+      { value: "Fundraising", title: "Fundrasing" },
     ],
     caption: "Fundraising 5K Run",
   },
@@ -365,7 +365,7 @@ export const images: CustomImage[] = [
     width: 200,
     height: 212,
     tags: [
-      { value: "T-Shirt", title: "T-Shirt" },
+      { value: "Tshirt", title: "T-Shirt" },
     ],
     caption: "T-Shirt",
   },

@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 .hero-image img {
   width: 100%;
@@ -8,21 +6,20 @@
 }
 
 .hero-image {
-  
   /* Lower than header's z-index */
-  position:relative;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.hero{
-  width:100%;
+.hero {
+  width: 100%;
 }
 
 .mission {
   display: flex;
-  
+
   margin-top: 4rem;
 }
 
@@ -30,23 +27,23 @@
   display: flex;
   align-items: center;
   margin: 0 10%;
-  max-width: 80%; 
+  max-width: 80%;
 }
 
 .mission-image {
   width: 50%;
   margin-right: 2rem;
-  border-radius:40px;
+  border-radius: 40px;
 }
 .mission-text {
   flex-grow: 1;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
-.mission-text h2{
+.mission-text h2 {
   margin-bottom: 1rem;
 }
-.mission-text p{
-  font-family: 'Quicksand', sans-serif;
+.mission-text p {
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
@@ -71,22 +68,40 @@
 }
 
 /* Other Home styles remain the same */
-.stories-container h2{
-  font-family: 'Quicksand', sans-serif;
+.stories-container h2 {
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
 
-.stories-container h1{
-  font-family: 'DM Sans', sans-serif;
+.stories-container h1 {
+  font-family: "DM Sans", sans-serif;
   font-weight: bolder;
   font-size: 30px;
 }
+
 
 .get-involved-image {
   width: 300px;
   margin-right: 150px;
   border-radius: 20px;
+}
+
+.get-involved {
+  padding: 2rem 0;
+  margin: 0;
+  background-color: #d9d9d9;
+}
+
+.get-involved h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.get-involved-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .get-involved-text {
@@ -95,28 +110,24 @@
 }
 
 @media (max-width: 767px) {
-
   .mission {
     display: grid;
     grid-template-columns: 1fr;
-    
     margin-top: 4rem;
   }
-
-  
 
   .mission-content {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     margin: 0 10%;
-    max-width: 80%; 
+    max-width: 80%;
   }
 
   .mission-image {
     width: 100%;
-    margin:0px;
-    border-radius:40px;
+    margin: 0px;
+    border-radius: 40px;
   }
 
   .mission-text {
@@ -131,27 +142,30 @@
   }
 
   .get-involved-text {
-   
-    margin:0px;
     display: inline-block;
-    margin: 0px;
+    margin-left: 0;
     text-align: center;
-}
-  
+  }
+
+  .get-involved-content {
+    display: block;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    
+  }
 
   .get-involved-image {
     width: 300px;
-    margin:0px;
+    margin: 0;
     border-radius: 20px;
-}
+  }
 
-.hero-image {
-  
-  /* Lower than header's z-index */
-  margin-top: 76px;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
+  .hero-image {
+    /* Lower than header's z-index */
+    margin-top: 76px;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }

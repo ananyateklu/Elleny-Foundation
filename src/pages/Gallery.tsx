@@ -1,23 +1,39 @@
 import { useState } from "react";
-import { Gallery } from "react-grid-gallery";
+import { Gallery, Image } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { images, CustomImage } from "./gallery-images";
 import "../components/CSS/ImageGallery.css";
+import { useTranslation } from 'react-i18next';
+export interface CustomizedImage extends Image {
+  original: string;
+  caption: string; // Ensure this is typed as string
+  tags?: { value: string; title: string }[]; // Ensure tags are typed as strings
+}
 
 export default function ImageGallery() {
   const [index, setIndex] = useState(-1);
-
   const currentImage = images[index];
   const nextIndex = (index + 1) % images.length;
   const nextImage = images[nextIndex] || currentImage;
   const prevIndex = (index + images.length - 1) % images.length;
   const prevImage = images[prevIndex] || currentImage;
-
   const handleClick = (index: number, item: CustomImage) => setIndex(index);
   const handleClose = () => setIndex(-1);
   const handleMovePrev = () => setIndex(prevIndex);
   const handleMoveNext = () => setIndex(nextIndex);
+  const { t } = useTranslation();
+
+  // Translate captions and tags
+  const translatedImages = images.map((image) => ({
+    ...image,
+    caption: typeof image.caption === 'string' ? t(image.caption) : '',
+    tags: image.tags?.map((tag) => ({
+      ...tag,
+      value: typeof tag.value === 'string' ? t(tag.value) : '',
+      title: typeof tag.title === 'string' ? t(tag.title) : ''
+    }))
+  }));
 
   return (
     <div className="gallery-container">
@@ -25,7 +41,7 @@ export default function ImageGallery() {
         Gallery
       </h1>
       <Gallery
-        images={images}
+        images={translatedImages}
         onClick={handleClick}
         enableImageSelection={false}
         tagStyle={{

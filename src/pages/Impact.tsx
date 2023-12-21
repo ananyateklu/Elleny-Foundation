@@ -1,6 +1,7 @@
 // src/pages/Mission.tsx
 import React from 'react';
 import "../components/CSS/Impact.css"
+import { useTranslation } from 'react-i18next';
 // import { Parallax } from 'react-scroll-parallax';
 
 
@@ -45,14 +46,15 @@ import "../components/CSS/Impact.css"
 
 
 const Impact: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="impact-container">
     <div className="impact-hero">
       <div className="impact-head">
-        <h1>WE’RE HERE TO MAKE AN IMPACT</h1>
+        <h1>{t("Impacttitle")}</h1>
         <div className="impact-tag">
           <p>
-          Improve the health of those we serve with care and compassion to realize higher community standards
+          {t("ImpactParagraph")}
           </p>
         </div>
       </div>

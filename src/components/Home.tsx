@@ -8,9 +8,11 @@ import soccer4 from '../assets/soccer4.jpg';
 import soccer2 from '../assets/soccer2.jpg';
 import stories from '../assets/stories.jpg';
 import video from '../assets/Video.mp4';
+import { useTranslation } from 'react-i18next';
 
 
 function Home() {
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -25,20 +27,21 @@ function Home() {
           <div className="mission-content">
             <img className="mission-image" src={change} alt="Mission" />
             <div className="mission-text">
-              <h2>Mission</h2>
+              <h2>{t("Mission")}</h2>
               <p>
-                The Elleny Foundation was established to honor the memory of Elleny Belayneh, whose aspiration was to become a pediatrician. Possessing a deep love for children and an inherent desire to help others, Elleny's spirit is the guiding force of our mission. The Foundation is steadfastly committed to erecting one or more clinics in her name, dedicated to serving the underserved, with a particular focus on children's welfare.
+                {t("Missionparagraph3")}
               </p>
-              <a href="/mission" className="learn-more">Learn More</a>
+              <a href="/mission" className="learn-more">{t("LearnMore")}</a>
             </div>
           </div>
         </div>
       </section>
       <section className="stories">
         <div className="stories-container">
-          <h2>STORIES</h2>
-          <h1>Real people experiencing real impact</h1>
-          <p>Read more about the organizations and people working to support positive growth and development for children every day.</p>
+          <h2>{t("Stories")}</h2>
+          <h1>{t("ImpactParagraph1")}</h1>
+          <p>{t("ImpactParagraph2")}</p>
+          <a href="/gallery" className="learn-more">{t("Gallery")}</a>
           <div className="story-images">
             <img className="story-image" src={soccer4} alt="soccer"></img>
             <img className="story-image" src={soccer2} alt="soccer"></img>
@@ -52,12 +55,9 @@ function Home() {
         <div className="container">
           <div className="get-involved-content">
             <div className="get-involved-text">
-              <h2>GET INVOLVED</h2>
-              <p>Looking to join the action?</p>
-              <p>
-                See the variety of ways you can take action to help kids who face adversity.
-              </p>
-              <a href="/getinvolved" className="learn-more">Learn More</a>
+              <h2>{t("Contact")}</h2>
+              <p>{t("Contactparagraph")}</p>
+              <a href="/getinvolved" className="learn-more">{t("Contact")}</a>
             </div>
             <img className="get-involved-image" src={kids} alt="Get Involved" />
           </div>

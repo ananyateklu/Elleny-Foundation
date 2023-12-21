@@ -8,7 +8,6 @@ import ContactUs from './pages/ContactUs';
 import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import GetInvolved from './components/GetInvolved';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <Route path="/gallery" element={<ImageGallery />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element= {<ContactUs />} />
-          <Route path="/getinvolved" element= {<GetInvolved />} />
         </Routes>
         </ParallaxProvider>
         <Footer />

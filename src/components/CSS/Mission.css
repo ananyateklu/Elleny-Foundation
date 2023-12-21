@@ -1,12 +1,12 @@
 .mission-hero{
     height:100vh;
     width:100%;
-    background-image: url("../../assets/our-mission2.png");
+    background-image: url("../../assets/missionpic.jpg");
     background-size:cover;
 }
 
 .mission-head{
-    padding-top: 10%;
+    padding-top: 15%;
     margin-left: 8%;
     text-align: left;
 }
