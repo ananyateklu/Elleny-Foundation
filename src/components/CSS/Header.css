@@ -30,6 +30,12 @@ nav {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.lang-switch button:hover {
+  color: #5c6bc0;
 }
 
 .nav-left,
@@ -112,8 +118,22 @@ nav a.active::after {
 @media (max-width: 767px) {
   .lang-switch {
     margin-top: 30px;
-    margin-left: 180px;
+    margin-left: 160px;
   }
+
+  .lang-switch button {
+    color: black;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  
+
   .hamburger-main {
     display: grid;
     position: relative;
@@ -130,7 +150,7 @@ nav a.active::after {
     box-shadow: -5px 0 10px rgba(5, 4, 4, 0.507);
     position: fixed;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.579);
+    background-color: white;
   }
 
   .nav-mob ul {
@@ -178,7 +198,7 @@ nav a.active::after {
   .logo {
     width: 30%;
     height: auto;
-    margin-left: 60px;
+    margin-left: 110px;
   }
 
   .nav-mob {
@@ -224,7 +244,7 @@ nav a.active::after {
   .switch-mobile {
     display: block;
     z-index: -1;
-    margin-left: 40px;
+    margin-left: 90px;
   }
   
 }

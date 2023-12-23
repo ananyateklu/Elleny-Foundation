@@ -32,12 +32,199 @@ import stories5 from "../assets/stories5.jpg";
 import stories6 from "../assets/stories6.jpg";
 import tshirt from "../assets/tshirt.png";
 import FiveK from "../assets/5k.png";
+import house from "../assets/house.jpg";
+import house1 from "../assets/house1.jpg";
+import house2 from "../assets/house2.jpg";
+import house3 from "../assets/house3.jpg";
+import house4 from "../assets/house4.jpg";
+import house5 from "../assets/house5.jpg";
+import house6 from "../assets/house6.jpg";
+import house7 from "../assets/house7.jpg";
+import house8 from "../assets/house8.jpg";
+import house9 from "../assets/house9.jpg";
+import house10 from "../assets/house10.jpg";
+import house11 from "../assets/house11.jpg";
+import house12 from "../assets/house12.jpg";
+import house13 from "../assets/house13.jpg";
+import house14 from "../assets/house14.jpg";
+import house15 from "../assets/house15.jpg";
+import house16 from "../assets/house16.jpg";
 
 export interface CustomImage extends Image {
   original: string;
 }
 
 export const images: CustomImage[] = [
+  {
+    src: house,
+    original: house,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house1,
+    original: house1,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house2,
+    original: house2,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house3,
+    original: house3,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house4,
+    original: house4,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house5,
+    original: house5,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house6,
+    original: house6,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house7,
+    original: house7,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house8,
+    original: house8,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house9,
+    original: house9,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house10,
+    original: house10,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house11,
+    original: house11,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house12,
+    original: house12,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house13,
+    original: house13,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house14,
+    original: house14,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house15,
+    original: house15,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house16,
+    original: house16,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
   {
     src: family,
     original: family,

@@ -23,6 +23,21 @@
   margin-top: 4rem;
 }
 
+.coming-soon {
+  text-align: center;
+  margin-top: 20px;
+  height: 12vh;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 1em; /* Adjust size as needed */
+  font-weight: bold; /* Makes text bold */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2); /* Add some shadow */
+}
+
+
 .mission-content {
   display: flex;
   align-items: center;
@@ -132,6 +147,20 @@
 
   .mission-text {
     text-align: center;
+  }
+
+  .coming-soon {
+    text-align: center;
+    margin-top: 20px;
+    height: 21vh;
+    width: 65%;
+    margin-left: 12%;
+    margin-right: 25%;
+    font-size: 1em; 
+    font-weight: bold; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2);
   }
 
   .story-images {

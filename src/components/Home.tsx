@@ -7,7 +7,7 @@ import OurWork from './OurWork';
 import soccer4 from '../assets/soccer4.jpg';
 import soccer2 from '../assets/soccer2.jpg';
 import stories from '../assets/stories.jpg';
-import video from '../assets/Video.mp4';
+import video from '../assets/Video2.mp4';
 import { useTranslation } from 'react-i18next';
 
 
@@ -21,6 +21,12 @@ function Home() {
         <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      </div>
+      <div>
+        <div className="coming-soon">
+          <h2>{t("ComingSoon")}</h2>
+          <a href="/gallery" className="learn-more">{t("Gallery")}</a>
+        </div>
       </div>
       <section className="mission">
         <div className="mission-container">

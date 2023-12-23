@@ -11,9 +11,10 @@ const LanguageSwitcher: React.FC = () => {
   };
 
   const languageButtonStyle = (language: string) => ({
-    marginRight: "10px",
+    marginRight: "0px",
     backgroundColor: "transparent",
     zIndex: 100,
+    color: "black",
     border: "none",
     fontWeight: i18n.language === language ? 'bold' : 'normal',
     textDecoration: i18n.language === language ? 'underline' : 'none'
