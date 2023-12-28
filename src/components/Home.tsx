@@ -44,9 +44,8 @@ function Home() {
       </section>
       <section className="stories">
         <div className="stories-container">
-          <h2>{t("Stories")}</h2>
-          <h1>{t("ImpactParagraph1")}</h1>
-          <p>{t("ImpactParagraph2")}</p>
+          <h1>{t("Gallery")}</h1>
+          <p>{t("GalleryDescription")}</p>
           <a href="/gallery" className="learn-more">{t("Gallery")}</a>
           <div className="story-images">
             <img className="story-image" src={soccer4} alt="soccer"></img>

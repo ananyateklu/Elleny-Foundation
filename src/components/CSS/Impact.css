@@ -13,7 +13,7 @@
 
 .impact-head h1{
     margin-bottom: 24px;
-    max-width: 100%;
+    max-width: 30%;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-stretch: normal;
@@ -24,7 +24,6 @@
     margin-bottom: 12px;
     font-size: 36px;
     line-height: 1.17;
-    max-width: 264px;
 }
 
 .impact-tag{
