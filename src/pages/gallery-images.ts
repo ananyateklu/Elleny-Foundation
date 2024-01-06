@@ -49,6 +49,10 @@ import house13 from "../assets/house13.jpg";
 import house14 from "../assets/house14.jpg";
 import house15 from "../assets/house15.jpg";
 import house16 from "../assets/house16.jpg";
+import house17 from "../assets/house17.jpg";
+import house18 from "../assets/house18.jpg";
+import house19 from "../assets/house19.jpg";
+import house20 from "../assets/house20.jpg";
 
 export interface CustomImage extends Image {
   original: string;
@@ -218,6 +222,56 @@ export const images: CustomImage[] = [
   {
     src: house16,
     original: house16,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house,
+    original: house,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house17,
+    original: house17,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house18,
+    original: house18,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house19,
+    original: house19,
+    width: 250,
+    height: 174,
+    tags: [
+      { value: "Clinic", title: "Clinic" },
+    ],
+    caption: "Elleny Clinic",
+  },
+  {
+    src: house20,
+    original: house20,
     width: 250,
     height: 174,
     tags: [
