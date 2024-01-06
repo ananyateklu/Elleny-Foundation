@@ -38,7 +38,7 @@ export default function ImageGallery() {
   return (
     <div className="gallery-container">
       <h1>
-        Gallery
+        {t("Gallery")}
       </h1>
       <Gallery
         images={translatedImages}
