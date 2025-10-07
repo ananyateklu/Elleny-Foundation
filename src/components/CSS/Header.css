@@ -1,250 +1,348 @@
+/* ===================================
+   HEADER - DESKTOP
+   =================================== */
+
 .header {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  background: url("../../assets/headerpngtrs.png");
-  background-size: cover;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  position: absolute; /* Change this to relative so it does not affect other pages */
-  z-index: 2;
-  height: 9rem;
-}
-
-nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1400px;
-  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
-.lang-switch {
-  margin-left: 60px;
-}
+/* ===================================
+   LOGO SECTION - LEFT
+   =================================== */
 
-.lang-switch button {
-  border: none;
-  background: none;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 0;
-  padding-left: 5px;
-}
-
-.lang-switch button:hover {
-  color: #5c6bc0;
-}
-
-.nav-left,
-.nav-center,
-.nav-right {
+.logo-corner {
   display: flex;
   align-items: center;
-}
-
-.nav-left,
-.nav-right {
-  justify-content: space-around;
-}
-
-nav a {
-  text-decoration: none;
-  color: inherit;
-  margin-left: 3.5rem;
-  margin-right: 4em;
-  margin-top: -20px;
-  position: relative;
-  transition: color 0.3s;
-}
-
-
-nav a:hover {
-  color: #5c6bc0;
-}
-
-nav a.active {
-  font-weight: bold;
-  color: inherit;
-}
-
-nav a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: currentColor;
 }
 
 .logo {
-  width: 8rem;
-  height: auto;
+  height: 4rem;
+  width: auto;
+  transition: transform 0.3s ease;
 }
 
-.donate-button {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  background-image: none;
-  background-color: #d0b25e;
-  color: #ffffff;
-  font-weight: bold;
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===================================
+   NAVIGATION LINKS - CENTER
+   =================================== */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.desktop-nav a {
   text-decoration: none;
-  border-radius: 30px;
-  transition: background-color 0.3s;
-  margin-left: 1rem;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.desktop-nav a:hover {
+  color: #5CA65E;
+  background: rgba(92, 166, 94, 0.1);
+}
+
+.desktop-nav a.active {
+  color: #5CA65E;
+  font-weight: 600;
+}
+
+.desktop-nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background: #5CA65E;
+}
+
+/* Donate Button */
+.donate-button {
+  background: linear-gradient(135deg, #d0b25e 0%, #e5c878 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.65rem 1.5rem !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 12px rgba(208, 178, 94, 0.3);
+  transition: all 0.3s ease !important;
 }
 
 .donate-button:hover {
-  background-color: #c4a052;
+  background: linear-gradient(135deg, #c4a052 0%, #d0b25e 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(208, 178, 94, 0.4) !important;
 }
 
-.hamburger_cont {
-  display: none;
+/* ===================================
+   LANGUAGE SWITCHER - RIGHT
+   =================================== */
+
+.lang-switch-corner {
+  display: flex;
+  align-items: center;
 }
 
+.lang-switch {
+  display: flex;
+  align-items: center;
+}
+
+.lang-toggle-container {
+  display: flex;
+  background: rgba(240, 240, 240, 0.4);
+  border-radius: 25px;
+  padding: 4px;
+}
+
+.lang-option {
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  color: #666;
+  position: relative;
+  z-index: 2;
+}
+
+.lang-option.active {
+  background: linear-gradient(135deg, #5CA65E 0%, #6eb96f 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(92, 166, 94, 0.3);
+}
+
+.lang-option:hover:not(.active) {
+  color: #5CA65E;
+}
+
+.lang-slider {
+  position: absolute;
+  background: linear-gradient(135deg, #5CA65E 0%, #6eb96f 100%);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(92, 166, 94, 0.3);
+}
+
+/* ===================================
+   MOBILE ELEMENTS - HIDDEN ON DESKTOP
+   =================================== */
+
+.hamburger-main,
+.hamburger_cont,
+.mobile-logo-link,
 .nav-mob {
   display: none;
-  transition: left 0.3s ease;
 }
 
-.switch-mobile {
-  display: none;
+/* ===================================
+   ACCESSIBILITY
+   =================================== */
+
+.desktop-nav a:focus-visible,
+.donate-button:focus-visible,
+.lang-option:focus-visible {
+  outline: 2px solid #5CA65E;
+  outline-offset: 3px;
 }
 
-@media (max-width: 767px) {
-  .lang-switch {
-    margin-top: 30px;
-    margin-left: 160px;
+/* ===================================
+   MOBILE STYLES
+   =================================== */
+
+@media (max-width: 1024px) {
+
+  /* Hide desktop elements */
+  .desktop-nav,
+  .logo-corner {
+    display: none !important;
   }
 
-  .lang-switch button {
-    color: black;
-    border: none;
-    background: none;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0;
-    padding-left: 0;
-  }
-
-  
-
-  .hamburger-main {
-    display: grid;
-    position: relative;
-    grid-template-columns: 100%;
-    z-index: -2;
-  }
-  .hamburger_cont {
-    display: grid;
-    grid-template-columns: 0% 75%;
-    z-index: -1;
-    gap: 5%;
-    padding-top: 10px;
-    padding-left: 10px;
-    box-shadow: -5px 0 10px rgba(5, 4, 4, 0.507);
+  /* Header adjustments */
+  .header {
+    padding: 1rem 1.5rem;
     position: fixed;
+    top: 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Prevent address bar from affecting header */
+  body {
+    padding-top: 76px;
+  }
+
+  /* Show mobile hamburger + logo */
+  .hamburger-main {
+    display: flex;
     align-items: center;
-    background-color: white;
+    gap: 1rem;
+    order: 1;
+  }
+
+  .hamburger_cont {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1003;
+  }
+
+  .mobile-logo-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-logo-link .logo {
+    height: 3.5rem;
+  }
+
+  /* Language switcher - right side */
+  .lang-switch-corner {
+    order: 2;
+  }
+
+  .lang-option {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Mobile navigation menu */
+  .nav-mob {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-mob.open {
+    opacity: 1;
+    pointer-events: all;
   }
 
   .nav-mob ul {
-    display: inline;
-    background-color: rgba(255, 255, 255, 0.914);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
     height: 100vh;
-    width: 50vw;
-    position: absolute;
-    list-style-type: none;
-    padding-right: 10px;
-    margin: 0px;
-    transition: left 0.3s ease;
-    text-align: center;
-    padding-left: 0px;
-    padding-top: 2rem;
-    position: fixed;
-    margin-top: 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 248, 250, 0.98) 100%);
+    backdrop-filter: blur(20px);
+    list-style: none;
+    margin: 0;
+    padding: 5rem 1.5rem 2rem;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.15);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
   }
 
-  .nav-left {
-    display: none;
-  }
-
-  .nav-right {
-    display: none;
-  }
-
-  .nav-center {
-    display: none;
-  }
-
-  .header {
-    display: block;
-    background-image: none;
-    background-color: white;
-    width: 100%;
-    height: auto;
-    position: fixed;
-  }
-
-  .donate-button {
-    margin: 0px;
-  }
-
-  .logo {
-    width: 30%;
-    height: auto;
-    margin-left: 110px;
-  }
-
-  .nav-mob {
-    height: 0; /* Initially hide the navigation drawer */
-    overflow: hidden;
-    transition: height 0.3s ease;
+  .nav-mob.open ul {
+    transform: translateX(0);
   }
 
   .nav-mob ul li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .nav-mob a {
+    display: block;
     text-decoration: none;
-    color: black;
-    position: relative;
-    transition: color 0.3s;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
   }
 
   .nav-mob a:hover {
-    color: #5c6bc0;
+    background: rgba(92, 166, 94, 0.1);
+    color: #5CA65E;
+    transform: translateX(8px);
   }
 
   .nav-mob a.active {
-    font-weight: bold;
-    color: inherit;
+    background: rgba(92, 166, 94, 0.15);
+    color: #5CA65E;
+    font-weight: 600;
+    border-left: 4px solid #5CA65E;
   }
 
-  .nav-mob a.active::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: currentColor;
-  }
-
-  .hamburger_cont a {
+  .nav-mob .donate-button {
+    background: linear-gradient(135deg, #d0b25e 0%, #e5c878 100%) !important;
+    color: white !important;
     text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+/* ===================================
+   SMALL MOBILE
+   =================================== */
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem 1rem;
   }
 
-  .switch-mobile {
-    display: block;
-    z-index: -1;
-    margin-left: 90px;
+  .mobile-logo-link .logo {
+    height: 3rem;
   }
-  
+
+  .lang-option {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-mob ul {
+    width: 240px;
+    padding: 4.5rem 1.2rem 2rem;
+  }
+
+  .nav-mob a {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
 }

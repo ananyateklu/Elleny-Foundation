@@ -24,83 +24,155 @@ const Header: React.FC = () => {
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen)
   }
+
   return (
-    <header className={`header ${hamburgerOpen ? 'hamburger-open' : ''}`}>
-      <nav>
-        <div className="nav-left">
-          <a href="/mission" className={isActive('/mission') ? 'active' : ''}>
-          {t("Mission")}
+    <header className={`header ${hamburgerOpen ? 'hamburger-open' : ''}`} role="banner">
+      <div className="logo-corner">
+        <img src={logo} alt="Elleny Foundation Logo" className="logo" />
+      </div>
+      <nav className="desktop-nav" aria-label="Main navigation">
+        <div className="nav-links">
+          <a
+            href="/mission"
+            className={isActive('/mission') ? 'active' : ''}
+            aria-label={t("Mission")}
+          >
+            {t("Mission")}
           </a>
-          <a href="/impact" className={isActive('/impact') ? 'active' : ''}>
-          {t("Impact")}
+          <a
+            href="/impact"
+            className={isActive('/impact') ? 'active' : ''}
+            aria-label={t("Impact")}
+          >
+            {t("Impact")}
           </a>
-          <a href="/gallery" className={isActive('/gallery') ? 'active' : ''}>
-          {t("Gallery")}
+          <a
+            href="/gallery"
+            className={isActive('/gallery') ? 'active' : ''}
+            aria-label={t("Gallery")}
+          >
+            {t("Gallery")}
           </a>
-        </div>
-        <div className="nav-center">
-          <span>
-          <a href="/">
-            <img src={logo} alt="logo" className="logo" />
+          <a
+            href="/about"
+            className={isActive('/about') ? 'active' : ''}
+            aria-label={t("About")}
+          >
+            {t("About")}
           </a>
-          <LanguageSwitcher />   
-           </span>
-        </div>
-        <div className="nav-right">
-          <a href="/about" className={isActive('/about') ? 'active' : ''}>
-          {t("About")}
+          <a
+            href="/contact"
+            className={isActive('/contact') ? 'active' : ''}
+            aria-label={t("Contact")}
+          >
+            {t("Contact")}
           </a>
-         
-          <a href="/contact" className={isActive('/contact') ? 'active' : ''}>
-          {t("Contact")}
-          </a>
-          <a href="https://www.paypal.com/donate/?hosted_button_id=AY8U45QM5K5GJ" className="donate-button">
-          {t("Donate")}
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=AY8U45QM5K5GJ"
+            className="donate-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Donate via PayPal"
+          >
+            {t("Donate")}
           </a>
         </div>
       </nav>
-      <div className="hamburger-main" >
-        <div className="hamburger_cont" onClick={toggleHamburger}>
-          <Hamburger isOpen={hamburgerOpen}/>
-            <img src={logo} alt="logo" className="logo" />
-        </div>
-        <div className='switch-mobile'><LanguageSwitcher /></div>
+      <div className="lang-switch-corner">
+        <LanguageSwitcher />
       </div>
-      <div className="nav-mob" style={{display: hamburgerOpen ? 'inline' : 'none'}}>
-        <ul className={hamburgerOpen ? 'open' : ''}>
-            <li><a href="/" className={isActive('/') ? 'active' : ''}>
-            {t("Home")}
-          </a></li>
-            <li>
-          <a href="/mission" className={isActive('/mission') ? 'active' : ''}>
-          {t("Mission")}
-          </a></li>
-            <li>
-              <a href="/impact" className={isActive('/impact') ? 'active' : ''}>
-              {t("Impact")}
-          </a></li>
-          <li>
-            <a href="/gallery" className={isActive('/gallery') ? 'active' : ''}>
-            {t("Gallery")}
-          </a></li>
-          <li>
-          <a href="/about" className={isActive('/about') ? 'active' : ''}>
-          {t("About")}
-          </a>
-          </li>
-          <li>
-          <a href="/contact" className={isActive('/contact') ? 'active' : ''}>
-          {t("Contact")}
-          </a>
-          </li>
-          <li>
-          <a href="https://www.paypal.com/donate/?hosted_button_id=AY8U45QM5K5GJ" className="donate-button">
-          {t("Donate")}
-          </a>
-          </li>
-            
-        </ul>
+      <div className="hamburger-main">
+        <div
+          className="hamburger_cont"
+          onClick={toggleHamburger}
+          role="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded={hamburgerOpen}
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              toggleHamburger();
+            }
+          }}
+        >
+          <Hamburger isOpen={hamburgerOpen} />
         </div>
+        <a href="/" aria-label="Home - Elleny Foundation" className="mobile-logo-link">
+          <img src={logo} alt="Elleny Foundation Logo" className="logo" />
+        </a>
+      </div>
+      <div className={`nav-mob ${hamburgerOpen ? 'open' : ''}`} style={{display: hamburgerOpen ? 'block' : 'none'}}>
+        <nav className="mobile-nav" aria-label="Mobile navigation">
+          <ul>
+            <li>
+              <a
+                href="/"
+                className={isActive('/') ? 'active' : ''}
+                aria-label={t("Home")}
+              >
+                {t("Home")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/mission"
+                className={isActive('/mission') ? 'active' : ''}
+                aria-label={t("Mission")}
+              >
+                {t("Mission")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/impact"
+                className={isActive('/impact') ? 'active' : ''}
+                aria-label={t("Impact")}
+              >
+                {t("Impact")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/gallery"
+                className={isActive('/gallery') ? 'active' : ''}
+                aria-label={t("Gallery")}
+              >
+                {t("Gallery")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/about"
+                className={isActive('/about') ? 'active' : ''}
+                aria-label={t("About")}
+              >
+                {t("About")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact"
+                className={isActive('/contact') ? 'active' : ''}
+                aria-label={t("Contact")}
+              >
+                {t("Contact")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.paypal.com/donate/?hosted_button_id=AY8U45QM5K5GJ"
+                className="donate-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Donate via PayPal"
+              >
+                {t("Donate")}
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

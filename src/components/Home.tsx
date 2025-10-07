@@ -7,7 +7,6 @@ import OurWork from './OurWork';
 import soccer4 from '../assets/soccer4.jpg';
 import soccer2 from '../assets/soccer2.jpg';
 import stories from '../assets/stories.jpg';
-import video from '../assets/Video2.mp4';
 import { useTranslation } from 'react-i18next';
 
 
@@ -17,10 +16,13 @@ function Home() {
   return (
     <div>
       <div className="hero-image">
-        <video className="hero" controls autoPlay muted loop>
-        <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          className="hero"
+          src="https://www.youtube.com/embed/rBI0ecP7Q-Q?autoplay=1&mute=1&loop=1&playlist=rBI0ecP7Q-Q&controls=1"
+          title="Elleny Foundation Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
       </div>
       <div>
         <div className="coming-soon">
