@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './CSS/Header.css';
 import Hamburger from './Hamburger'
 import LanguageSwitcher from './translate/switch';
@@ -28,7 +28,9 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${hamburgerOpen ? 'hamburger-open' : ''}`} role="banner">
       <div className="logo-corner">
-        <img src={logo} alt="Elleny Foundation Logo" className="logo" />
+        <Link to="/" aria-label="Home - Elleny Foundation" className="logo-link">
+          <img src={logo} alt="Elleny Foundation Logo" className="logo" />
+        </Link>
       </div>
       <nav className="desktop-nav" aria-label="Main navigation">
         <div className="nav-links">
@@ -98,9 +100,9 @@ const Header: React.FC = () => {
         >
           <Hamburger isOpen={hamburgerOpen} />
         </div>
-        <a href="/" aria-label="Home - Elleny Foundation" className="mobile-logo-link">
+        <Link to="/" aria-label="Home - Elleny Foundation" className="mobile-logo-link">
           <img src={logo} alt="Elleny Foundation Logo" className="logo" />
-        </a>
+        </Link>
       </div>
       <div className={`nav-mob ${hamburgerOpen ? 'open' : ''}`} style={{display: hamburgerOpen ? 'block' : 'none'}}>
         <nav className="mobile-nav" aria-label="Mobile navigation">
