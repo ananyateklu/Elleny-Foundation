@@ -1,4 +1,4 @@
-// src/pages/Mission.tsx
+// src/pages/Impact.tsx
 import React from 'react';
 import "../components/CSS/Impact.css"
 import { useTranslation } from 'react-i18next';
@@ -63,7 +63,14 @@ const Impact: React.FC = () => {
      <MyComponentRight/>
      <MyComponent/>
      <MyComponentRight/> */}
-      
+     <div className="impact-content">
+        <div className="impact-section-head">
+          <h3>{t("Whatwedo")}</h3>
+        </div>
+        <div className="impact-section-body">
+          <p>{t("Aboutparagraph3")}</p>
+        </div>
+      </div>
       
     </div>
   );

@@ -1,13 +1,19 @@
 .mission-hero{
     height:100vh;
     width:100%;
-    background-image: url("../../assets/missionpic.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../assets/missionpic.jpg");
     background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items:center;
+    padding: 0 8%;
+    box-sizing: border-box;
 }
 
 .mission-head{
-    padding-top: 11%;
-    margin-left: 8%;
+    padding-top: 0;
+    margin-left: 0;
     text-align: left;
 }
 
@@ -34,14 +40,15 @@
     width: 30%;
 }
 
-.content-section{
+.mission-main .content-section{
     width: 100%;
     max-width: 640px;
+    margin: 0 auto;
     display:flex;
     flex-direction: column;
-    padding-left:30%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 100px 2rem;
 }
 
 .section1-head{
@@ -61,7 +68,7 @@
     line-height: 1.08;
 }
 
-.section1-body{
+.mission-main .section1-body{
     transform: translateY(0px);
     opacity: 1;
     text-align: left;
@@ -73,6 +80,13 @@
     font-stretch: normal;
     letter-spacing: normal;
     color: rgb(29, 37, 44);
+    width: 100%;
+    max-width: 640px;
+}
+
+.mission-main .section1-body p{
+    margin: 0;
+    white-space: normal;
 }
 
 @media (max-width: 767px)
@@ -81,10 +95,15 @@
         margin-top: 76px;
         height:auto;
         width:100%;
-        background-image: url("../../assets/our-mission2.png");
-        background-size:auto auto;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../assets/our-mission2.png");
+        background-size:cover;
         object-fit: cover;
         padding-bottom:1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 6rem 1.5rem 2rem;
     }
 
     .mission-tag{
@@ -94,18 +113,13 @@
         width: auto;
     }
 
-    .content-section
-    {
-        padding:0px !important;
+    .mission-main .content-section{
+        padding: 3rem 1.5rem;
+        gap: 1rem;
     }
 
-    
-    .section1-body
-    {
-    
-        padding-left: 1rem;
-        padding-right: 1rem;
-    
+    .mission-main .section1-body{
+        padding: 0 1rem;
     }
 
 
